@@ -7,8 +7,8 @@ pygame.init()
 
 
 # Window
-WIDTH = 800
-HEIGHT = 600
+WIDTH = 1280
+HEIGHT = 980
 SIZE = (WIDTH, HEIGHT)
 TITLE = "Maze"
 screen = pygame.display.set_mode(SIZE)
@@ -28,17 +28,19 @@ GREEN = (0, 255, 0)
 
 
 # Make a player
-player =  [200, 150, 25, 25]
+player =  [40, 40, 25, 25]
 player_vx = 0
 player_vy = 0
 player_speed = 5
 
 # make walls
-wall1 =  [300, 275, 200, 25]
-wall2 =  [400, 450, 200, 25]
-wall3 =  [100, 100, 25, 200]
+wall1 =  [0, 0, 600, 25]
+wall2 =  [ 680, 0, 600, 25 ]
+wall3 =  [0, 0, 25, 450]
+wall4 =  [0, 530, 25, 450]
 
-walls = [wall1, wall2, wall3]
+
+walls = [wall1, wall2, wall3, wall4]
 
 # Make coins
 coin1 = [300, 500, 25, 25]
